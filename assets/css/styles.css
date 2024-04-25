@@ -1,0 +1,27 @@
+/* ===[HỖ TRỢ CSS VÀ KÍCH THƯỚC FONT CHỮ ĐỒNG BỘ VỀ REM]=== */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7264d6;
+    --second-color: #439f90;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ===[COMMON]=== */
