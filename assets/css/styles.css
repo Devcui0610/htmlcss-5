@@ -8,6 +8,7 @@
 :root {
     --primary-color: #7264d6;
     --second-color: #439f90;
+    --primary-black: #212832;
 }
 
 html,
@@ -24,4 +25,491 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-/* ===[COMMON]=== */
+input,
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inner {
+    background: #ccc;
+    font-weight: 600;
+    padding: 24px;
+    text-align: center;
+}
+
+/* ===========[COMMON]=========== */
+.hero__txns--left,
+.hero__txns-row,
+.hero__frame-mobile,
+.hero__secured-funds,
+.hero__interest,
+.hero__deposit,
+.navbar__list,
+.header__inner,
+.logo__group {
+    display: flex;
+    align-items: center;
+}
+
+.hero__card--deco3,
+.hero__card--deco1,
+.hero__card--deco2,
+.hero__mobile-top,
+.hero__secured-funds,
+.hero__interest,
+.hero__deposit {
+    position: absolute;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    border-radius: 6px;
+    background: var(--primary-black);
+    padding: 12px 24px;
+}
+/* ===========[HEADER]=========== */
+.header__inner {
+    padding-top: 42px;
+}
+
+.logo__group {
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    margin-right: 0.695rem;
+}
+
+.navbar {
+    margin-left: 47px;
+}
+
+.navbar__link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 24px;
+    color: #696d76;
+    font-size: 1.6rem;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.navbar__link::before {
+    display: block;
+    content: attr(title);
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.navbar__link:hover {
+    color: #212832;
+    font-weight: 600;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+.navbar__active {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.navbar__active::after {
+    position: absolute;
+    left: 24px;
+    bottom: 3px;
+    width: calc(100% - 48px);
+    display: inline-block;
+    content: "";
+    height: 1px;
+    background: var(--primary-color);
+    border-radius: 9px;
+}
+
+.header__cta {
+    margin-left: auto;
+}
+
+.header__login {
+    color: var(--primary-black);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-right: 28px;
+}
+
+/* ===========[HERO]=========== */
+/* Left */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__left {
+    width: 540px;
+    max-width: 100%;
+}
+
+.hero__name-section {
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__name-section::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    margin-right: 12px;
+    transform: translateY(-5px);
+}
+
+.hero__title {
+    color: var(--primary-black);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-top: 12px;
+}
+
+.hero__title strong {
+    color: var(--primary-color);
+}
+
+.hero__desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    margin-top: 20px;
+}
+
+.hero__email {
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero__input {
+    width: 100%;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    padding-left: 24px;
+}
+
+.hero__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.hero__email--btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 0;
+    width: 149px;
+    height: 58px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.hero__form-note {
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.72;
+    margin-top: 20px;
+}
+
+/* Right */
+.hero__right {
+    position: relative;
+    font-size: 1rem;
+}
+
+.hero__frame-mobile {
+    flex-direction: column;
+    width: 29.6em;
+    height: 56.2em;
+    border-radius: 4em;
+    border: 1.2em solid #212832;
+    background: #fff;
+}
+
+.hero__deposit {
+    top: 11.3em;
+    left: -10em;
+    width: 17.4em;
+    height: 4.6em;
+    border-radius: 0.6em;
+    background: #fff;
+    box-shadow: 0em 1em 2em 0em rgba(0, 0, 0, 0.07);
+    padding: 0 1em;
+}
+
+.hero__deposit--icon {
+    margin-right: 0.8em;
+    width: 1.8em;
+    height: auto;
+}
+
+.hero__deposit--text {
+    color: #31456a;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1;
+    margin-right: 1.9em;
+}
+
+.hero__deposit--num {
+    color: #4ab5e3;
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.hero__interest {
+    top: 12.7em;
+    left: 34em;
+    flex-direction: column;
+    justify-content: center;
+    width: 13em;
+    height: 13em;
+    background: #da6464;
+    border-radius: 50%;
+}
+
+.hero__interest--num {
+    color: #fff;
+    text-align: center;
+    font-size: 4.4em;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero__interest--text {
+    color: #fff;
+    font-size: 1.6em;
+    line-height: normal;
+    margin-top: -0.8em;
+}
+
+.hero__secured-funds {
+    bottom: 6.1em;
+    left: 24.6em;
+    width: 12.4em;
+    height: 6.8em;
+    border-radius: 1em;
+    background: var(--second-color);
+    padding: 0 1.4em;
+}
+
+.hero__secured-funds--info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    margin-left: 1.1em;
+}
+
+.hero__secured-funds--icon {
+    width: 2em;
+    height: auto;
+}
+
+.hero__secured-funds--num {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__secured-funds--text {
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.hero__mobile-top {
+    top: 0;
+    left: 7.6em;
+    width: 14.4em;
+    height: 3.6em;
+    border-radius: 0em 0em 1.8em 1.8em;
+    background: #3c2f60;
+}
+
+/* Mobile inner */
+/* Card */
+.hero__card {
+    position: relative;
+    color: #fff;
+    width: 25em;
+    height: 15em;
+    border-radius: 2em;
+    background: linear-gradient(76deg, #8479e4, #7263d6);
+    margin-top: 4em;
+    padding: 1.6em;
+    overflow: hidden;
+}
+
+.hero__card-wrap {
+    position: absolute;
+    z-index: 2;
+}
+.hero__card--title {
+    display: block;
+    font-size: 1.4em;
+    line-height: normal;
+}
+
+.hero__card--num-money {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0.2em;
+}
+
+.hero__card--row {
+    display: grid;
+    grid-template-columns: 5.7em 1fr;
+    column-gap: 1.2em;
+    margin-top: 3.2em;
+}
+
+.hero__card--col-right,
+.hero__card--col-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.hero__card--col-owner-text,
+.hero__card--col-time-text {
+    font-size: 1em;
+    line-height: normal;
+}
+
+.hero__card--col-owner-name,
+.hero__card--col-time-num {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero__card--deco1 {
+    width: 10.5em;
+    height: auto;
+    top: 0em;
+    left: 0em;
+}
+
+.hero__card--deco2 {
+    width: 14.2em;
+    height: auto;
+    bottom: 0em;
+    right: 0em;
+}
+
+.hero__card--deco3 {
+    width: 4em;
+    height: auto;
+    top: 1.6em;
+    right: 1.6em;
+}
+
+/* Transactions */
+.hero__txns {
+    width: 25em;
+    height: 15em;
+    margin-top: 2.4em;
+}
+
+.hero__txns-row + .hero__txns-row {
+    margin-top: 2.8em;
+}
+
+.hero__txns-nav {
+    margin-left: auto;
+}
+
+.hero__txns-title {
+    color: #31456a;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero__txns--left {
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.hero__txns--left-1{
+    background: #edf8fd;
+}
+
+.hero__txns--left-2{
+    background: #fbefef;
+}
+
+.hero__txns--left-3{
+    background: #ecf5f4;
+}
+
+.hero__txns--left-4{
+    background: #f1effb;
+}
+
+.hero__txns--right,
+.hero__txns--center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6em;
+}
+
+.hero__txns--center {
+    margin-left: 1.4em;
+}
+
+.hero__txns--right {
+    margin-left: auto;
+}
+
+.hero__txns--center-title {
+    color: #212832;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero__txns--center-desc {
+    color: #696d76;
+    font-size: 1em;
+    line-height: 1;
+}
+
+.hero__txns--center-desc-right {
+    text-align: right;
+}
