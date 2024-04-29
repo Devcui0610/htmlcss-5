@@ -101,9 +101,9 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <div class="container">
+        <header class="header header-fixed">
+            <div class="container">
             <!-- HEADER -->
-            <header class="header">
                 <div class="row">
                     <div class="col">
                         <section class="header__inner">
@@ -148,7 +148,7 @@
                                 <ul class="navbar__list">
                                     <li class="navbar__item">
                                         <a
-                                            href="#!"
+                                            href="#"
                                             class="navbar__link navbar__active"
                                             title="Home"
                                             >Home</a
@@ -156,7 +156,15 @@
                                     </li>
                                     <li class="navbar__item">
                                         <a
-                                            href="#!"
+                                            href="#instruct"
+                                            class="navbar__link navbar__active"
+                                            title="Products"
+                                            >Instruct</a
+                                        >
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#product"
                                             class="navbar__link navbar__active"
                                             title="Products"
                                             >Products</a
@@ -164,7 +172,7 @@
                                     </li>
                                     <li class="navbar__item">
                                         <a
-                                            href="#!"
+                                            href="#features"
                                             class="navbar__link navbar__active"
                                             title="Features"
                                             >Features</a
@@ -172,7 +180,7 @@
                                     </li>
                                     <li class="navbar__item">
                                         <a
-                                            href="#!"
+                                            href="#blog"
                                             class="navbar__link navbar__active"
                                             title="Blog"
                                             >Blog</a
@@ -188,8 +196,9 @@
                             </div>
                         </section>
                     </div>
-                </div>
-            </header>
+                </div> 
+            </div>
+        </header>
             <!-- Header Mobile -->
             <header class="mobile-header">
                 <input
@@ -235,7 +244,7 @@
                             <ul class="navbar__list">
                                 <li class="navbar__item">
                                     <a
-                                        href="#!"
+                                        href="#"
                                         class="navbar__link navbar__active"
                                         title="Home"
                                         >Home</a
@@ -243,7 +252,15 @@
                                 </li>
                                 <li class="navbar__item">
                                     <a
-                                        href="#!"
+                                        href="#instruct"
+                                        class="navbar__link navbar__active"
+                                        title="Products"
+                                        >Instruct</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a
+                                        href="#product"
                                         class="navbar__link navbar__active"
                                         title="Products"
                                         >Products</a
@@ -251,7 +268,7 @@
                                 </li>
                                 <li class="navbar__item">
                                     <a
-                                        href="#!"
+                                        href="#features"
                                         class="navbar__link navbar__active"
                                         title="Features"
                                         >Features</a
@@ -259,7 +276,7 @@
                                 </li>
                                 <li class="navbar__item">
                                     <a
-                                        href="#!"
+                                        href="#blog"
                                         class="navbar__link navbar__active"
                                         title="Blog"
                                         >Blog</a
@@ -275,8 +292,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </header>
-
+            <div class="container">
             <main>
                 <!-- HERO -->
                 <section class="hero">
@@ -301,6 +319,8 @@
                                         type="email"
                                         class="hero__input"
                                         placeholder="Your email address"
+                                        required 
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                     />
                                     <button
                                         type="submit"
@@ -558,7 +578,7 @@
                 </section>
 
                 <!-- INSTRUCT -->
-                <section class="instruct">
+                <section id="instruct" class="instruct">
                     <div class="row row-cols-lg-2 align-items-center">
                         <div class="col-lg-5 col-md-5">
                             <div class="instruct__left">
@@ -652,7 +672,7 @@
                 </section>
 
                 <!-- SERVICES -->
-                <section class="services">
+                <section id="product" class="services">
                     <div class="row align-items-center row-cols-md-2">
                         <div class="col-lg-5 col-md-12">
                             <article class="services__left">
@@ -790,7 +810,7 @@
                 </section>
 
                 <!-- PAYMENT -->
-                <section class="payment">
+                <section id="features" class="payment">
                     <div class="row row-cols-lg-2 align-items-center">
                         <div class="col-lg-5 col-md-5">
                             <section class="payment__left">
@@ -1039,7 +1059,7 @@
                 </section>
 
                 <!-- BLOG -->
-                <section class="blog">
+                <section id="blog" class="blog">
                     <div class="row">
                         <div class="col">
                             <section class="blog__header">
@@ -1331,6 +1351,8 @@
                                 name="email"
                                 id="email"
                                 placeholder="Email address..."
+                                required 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             />
                             <button type="submit" class="footer__btn">
                                 Subscribe

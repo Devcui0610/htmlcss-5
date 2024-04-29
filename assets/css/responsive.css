@@ -252,6 +252,7 @@
     /* ---> Position: absolute<--- */
     .header__inner {
         position: relative;
+        margin-top: 5px;
     }
     .logo-tablet {
         position: absolute;
